@@ -1,6 +1,9 @@
 <?php
 class TheSunWeb_ConditionalTerms_Model_Checkout_Agreement extends Mage_Rule_Model_Abstract
 {
+    protected $_eventPrefix = 'checkout_agreement';
+    protected $_eventObject = 'agreement';
+    
     /**
      * Store rule combine conditions model
      *

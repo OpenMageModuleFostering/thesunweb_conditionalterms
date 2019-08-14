@@ -2,7 +2,7 @@
 <config>
     <modules>
         <TheSunWeb_ConditionalTerms>
-            <version>1.0.0</version>
+            <version>1.1.0</version>
         </TheSunWeb_ConditionalTerms>
     </modules>
     <global>
@@ -33,6 +33,11 @@
             </cterms>
             <cterms_mysql4>
                 <class>TheSunWeb_ConditionalTerms_Model_Mysql4</class>
+                <entities>
+                    <agreement_product_attribute>
+                        <table>ks_agreement_product_attribute</table>
+                    </agreement_product_attribute>
+                </entities>
             </cterms_mysql4>
             <checkout>
             	<rewrite>
@@ -47,6 +52,17 @@
                 </setup>
             </cterms_setup>
         </resources>
+        <events>
+            <checkout_agreement_save_after>
+                <observers>
+                    <ks_agreement_save_attribute>
+						<type>singleton</type>
+                        <class>cterms/observer</class>
+                        <method>saveAgreementAttributes</method>
+                    </ks_agreement_save_attribute>
+                </observers>
+            </checkout_agreement_save_after>
+        </events>
     </global>
     <admin>
         <routers>
