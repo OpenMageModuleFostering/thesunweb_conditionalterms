@@ -1,0 +1,16 @@
+{
+    "name": "OpenMageModuleFostering/TheSunWeb_ConditionalTerms",
+    "type": "magento-module",
+    "license": "OSL",
+    "homepage": "",
+    "description": "Multiple Dynamic Terms and Agreements Management",
+    "authors": [
+    {
+        "name": "Xiliang Sun",
+        "email": "ryansun81@gmail.com"
+    }
+],
+    "suggest": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}
