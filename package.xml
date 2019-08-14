@@ -1,19 +1,19 @@
 <?xml version="1.0"?>
 <package>
     <name>TheSunWeb_ConditionalTerms</name>
-    <version>1.2.0</version>
+    <version>1.2.1</version>
     <stability>stable</stability>
     <license>OSL</license>
     <channel>community</channel>
     <extends/>
     <summary>Multiple Dynamic Terms and Agreements Management</summary>
-    <description>Allows website to show different agreements and terms base on different products, categories, cart total, shipping address and etc in cart. &#xD;
+    <description>Allows website to show different agreements and terms base on different products, categories, cart total, shipping address and etc in cart. &amp;#xD;&#xD;
 Its inspired and requested by https://community.magento.com/t5/Programming-Questions/Dynamic-Terms-and-Conditions-based-on-Product-Selection/m-p/14416</description>
-    <notes>Fixed validation bug (alert says selecting all agreements even though all are selected)</notes>
-    <authors><author><name>Xiliang Sun</name><user>ryansun</user><email>ryansun81@gmail.com</email></author></authors>
+    <notes>Removed debugging statement</notes>
+    <authors><author><name>Ryan</name><user>Sun</user><email>ryansun81@gmail.com</email></author></authors>
     <date>2017-02-09</date>
-    <time>02:03:58</time>
-    <contents><target name="magecommunity"><dir name="TheSunWeb"><dir name="ConditionalTerms"><dir name="Block"><dir name="Adminhtml"><dir name="Checkout"><dir name="Agreement"><dir name="Edit"><file name="Form.php" hash="61bbe9ca3ef2ee3d4361c64a9498ff5d"/></dir></dir></dir></dir><dir name="Checkout"><file name="Agreements.php" hash="0d8d75e7ee146282580e234e1d013149"/></dir></dir><dir name="Helper"><file name="Checkout.php" hash="be5cb1e6ade47de650c8f85125a13948"/><file name="Data.php" hash="07b3069d318dd371edda00ab26e3f0dd"/></dir><dir name="Model"><dir name="Checkout"><file name="Agreement.php" hash="822ccda2ebbfce8e50144ec24b873ccb"/></dir><file name="Observer.php" hash="22c1e00f8b3b200c0d7f693d34bacd77"/></dir><dir name="controllers"><dir name="Adminhtml"><dir name="Checkout"><file name="AgreementController.php" hash="91bab32e79934ee59626cb39008726b9"/></dir></dir></dir><dir name="etc"><file name="config.xml" hash="d07e7144e50f25232d1eb083c93bc03c"/></dir><dir name="sql"><dir name="cterms_setup"><file name="mysql4-install-1.0.0.php" hash="b386db3cf28c5b751b0bf2820b470c45"/><file name="mysql4-upgrade-1.0.0-1.1.0.php" hash="61b9e44c14be303da3a2ddbc7f59985f"/></dir></dir></dir></dir></target><target name="magedesign"><dir name="adminhtml"><dir name="default"><dir name="default"><dir name="layout"><file name="cterms.xml" hash="812e715879dcf055aa5372b467ffa8b0"/></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="TheSunWeb_ConditionalTerms.xml" hash="ec90ec8570f461346a013f75c1608747"/></dir></target></contents>
+    <time>18:41:27</time>
+    <contents><target name="magecommunity"><dir name="TheSunWeb"><dir name="ConditionalTerms"><dir name="Block"><dir name="Adminhtml"><dir name="Checkout"><dir name="Agreement"><dir name="Edit"><file name="Form.php" hash="61bbe9ca3ef2ee3d4361c64a9498ff5d"/></dir></dir></dir></dir><dir name="Checkout"><file name="Agreements.php" hash="0d8d75e7ee146282580e234e1d013149"/></dir></dir><dir name="Helper"><file name="Checkout.php" hash="fd8f324eefd35c044165bd2a37fcd137"/><file name="Data.php" hash="07b3069d318dd371edda00ab26e3f0dd"/></dir><dir name="Model"><dir name="Checkout"><file name="Agreement.php" hash="822ccda2ebbfce8e50144ec24b873ccb"/></dir><file name="Observer.php" hash="22c1e00f8b3b200c0d7f693d34bacd77"/></dir><dir name="controllers"><dir name="Adminhtml"><dir name="Checkout"><file name="AgreementController.php" hash="91bab32e79934ee59626cb39008726b9"/></dir></dir></dir><dir name="etc"><file name="config.xml" hash="d07e7144e50f25232d1eb083c93bc03c"/></dir><dir name="sql"><dir name="cterms_setup"><file name="mysql4-install-1.0.0.php" hash="b386db3cf28c5b751b0bf2820b470c45"/><file name="mysql4-upgrade-1.0.0-1.1.0.php" hash="61b9e44c14be303da3a2ddbc7f59985f"/></dir></dir></dir></dir></target><target name="magedesign"><dir name="adminhtml"><dir name="default"><dir name="default"><dir name="layout"><file name="cterms.xml" hash="812e715879dcf055aa5372b467ffa8b0"/></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="TheSunWeb_ConditionalTerms.xml" hash="ec90ec8570f461346a013f75c1608747"/></dir></target></contents>
     <compatible/>
     <dependencies><required><php><min>5.0.0</min><max>7.0.0</max></php></required></dependencies>
 </package>

@@ -18,7 +18,6 @@ class TheSunWeb_ConditionalTerms_Helper_Checkout extends Mage_Checkout_Helper_Da
                     }
                 }
                 $this->_agreements = $agreements->getAllIds();
-                var_dump($this->_agreements);exit();
             }
         }
         return $this->_agreements;
