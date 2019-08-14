@@ -13,11 +13,10 @@ class TheSunWeb_ConditionalTerms_Helper_Checkout extends Mage_Checkout_Helper_Da
 
                 $address = Mage::getSingleton('checkout/session')->getQuote()->getShippingAddress();
                 foreach($agreements as $agreement) {
-                    if(!$agreement->getConditions()->validate($address)) {
-                        $agreements->removeItemByKey($agreement->getId());
+                    if($agreement->getConditions()->validate($address)) {
+                        $this->_agreements[] = $agreement->getId();
                     }
                 }
-                $this->_agreements = $agreements->getAllIds();
             }
         }
         return $this->_agreements;
