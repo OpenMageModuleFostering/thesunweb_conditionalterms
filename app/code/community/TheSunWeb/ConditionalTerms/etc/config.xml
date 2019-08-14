@@ -10,6 +10,11 @@
             <cterms>
                 <class>TheSunWeb_ConditionalTerms_Helper</class>
             </cterms>
+            <checkout>
+                <rewrite>
+                    <data>TheSunWeb_ConditionalTerms_Helper_Checkout</data>
+                </rewrite>
+            </checkout>
         </helpers>
         <blocks>
             <cterms>
